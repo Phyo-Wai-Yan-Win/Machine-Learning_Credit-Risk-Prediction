@@ -10,7 +10,7 @@ This project applies machine learning algorithms to enhance credit risk assessme
 
 ## Getting Started
 
-Please see the [detailed documentation](link_to_your_detailed_documentation) for a comprehensive overview of the project, including:
+Please see the [detailed documentation](https://github.com/Phyo-Wai-Yan-Win/Credit-Risk-Prediction/blob/main/documentation.md) for a comprehensive overview of the project, including:
 
 - Data preprocessing steps
 - Machine learning model training and evaluation
