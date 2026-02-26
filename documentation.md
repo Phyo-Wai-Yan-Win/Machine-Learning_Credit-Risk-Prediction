@@ -25,19 +25,32 @@ The dataset used in this project consists of 425 records and 15 variables, each 
 - Credit Standing: This represents the credit standing of the customer as assessed by the bank (Good/Bad).
 A sample data row might look like this:
 
-| Checking Acct | Credit Hist | Purpose         | Savings Acct | Employment | Gender | Personal Status | Housing | Job           | Telephone | Foreign | Months Acct | Residence Time | Age | Credit Standing |
-| ------------- | ----------- | --------------- | ------------ | ---------- | ------ | --------------- | ------- | ------------- | --------- | ------- | ----------- | -------------- | --- | --------------- |
-| 0Balance      | Current     | Small Appliance | Low          | Short      | M      | Single          | Own     | Unskilled     | Yes       | Yes     | 13          | 3              | 23  | Good            |
-| <100          | Current     | Car (Used)      | Medium       | Medium     | F      | Married         | Rent    | Skilled       | No        | No      | 24          | 2              | 35  | Good            |
-| 100-500       | Past Due    | Furniture       | Low          | Short      | M      | Divorced        | Rent    | Skilled       | Yes       | No      | 9           | 1              | 41  | Bad             |
-| >500          | Current     | Education       | High         | Long       | F      | Single          | Own     | Management    | Yes       | No      | 48          | 4              | 29  | Good            |
-| No Checking   | No Credit   | Business        | None         | Medium     | M      | Married         | Own     | Self-Employed | No        | Yes     | 18          | 2              | 33  | Bad             |
-| <100          | Delayed     | Repairs         | Medium       | Long       | F      | Separated       | Rent    | Skilled       | Yes       | Yes     | 36          | 3              | 46  | Good            |
-| 0Balance      | Critical    | Vacation        | Low          | Short      | M      | Single          | Rent    | Unskilled     | No        | No      | 6           | 1              | 27  | Bad             |
-| 100-500       | Current     | Car (New)       | High         | Medium     | F      | Widowed         | Own     | Skilled       | Yes       | No      | 30          | 4              | 58  | Good            |
-| >500          | Past Due    | Other           | Medium       | Unemployed | M      | Single          | Free    | Unemployed    | No        | Yes     | 12          | 2              | 22  | Bad             |
-| No Checking   | Current     | Small Appliance | Low          | Long       | F      | Married         | Own     | Skilled       | Yes       | No      | 60          | 4              | 39  | Good            |
+<<div style="overflow-x:auto; max-width:100%;">
 
+| Checking Acct | Credit Hist | Purpose | Savings Acct | Employment | Gender | Personal Status | Housing | Job | Telephone | Foreign | Months Acct | Residence Time | Age | Credit Standing |
+| ------------- | ----------- | ------- | ------------ | ---------- | ------ | --------------- | ------- | --- | --------- | ------- | ----------- | -------------- | --- | --------------- |
+| 0Balance | Current | Small Appliance | Low | Short | M | Single | Own | Unskilled | Yes | Yes | 13 | 3 | 23 | Good |
+| 0Balance | Current | Furniture | MedLow | Unemployed | M | Divorced | Own | Skilled | Yes | Yes | 25 | 1 | 32 | Bad |
+| No Acct | Bank Paid | Car New | Low | Long | M | Single | Own | Management | No | Yes | 19 | 4 | 38 | Bad |
+| Low | Current | Furniture | Low | Short | M | Single | Own | Unskilled | Yes | Yes | 13 | 2 | 36 | Bad |
+| Low | Delay | Education | MedLow | Medium | M | Single | Rent | Skilled | No | Yes | 40 | 3 | 31 | Good |
+| No Acct | Critical | Furniture | No Acct | Short | M | Married | Own | Skilled | Yes | No | 11 | 1 | 25 | Good |
+| 0Balance | Current | Car New | Low | Short | M | Married | Own | Unskilled | Yes | Yes | 13 | 3 | 26 | Good |
+| 0Balance | Critical | Business | Low | Very Short | M | Single | Own | Unskilled | Yes | Yes | 14 | 1 | 27 | Good |
+| High | Current | Small Appliance | Low | Short | M | Single | Own | Skilled | Yes | Yes | 37 | 2 | 25 | Bad |
+| No Acct | Current | Small Appliance | No Acct | Very Short | F | Divorced | Own | Skilled | No | Yes | 25 | 1 | 43 | Bad |
+| No Acct | Current | Business | Low | Unemployed | M | Single | Rent | Management | No | Yes | 49 | 2 | 32 | Bad |
+| No Acct | Current | Car New | MedLow | Short | M | Single | Rent | Unskilled | Yes | No | 11 | 2 | 34 | Good |
+| Low | Current | Business | Low | Short | M | Married | Own | Skilled | No | Yes | 10 | 1 | 26 | Good |
+| 0Balance | Current | Car New | Low | Long | M | Single | Own | Skilled | Yes | Yes | 25 | 1 | 44 | Bad |
+| Low | Critical | Car New | Low | Medium | M | Single | Own | Unskilled | Yes | Yes | 13 | 3 | 46 | Good |
+| 0Balance | Current | Car Used | Low | Short | M | Divorced | Own | Management | No | Yes | 31 | 4 | 39 | Good |
+| Low | Current | Furniture | Low | Very Short | F | Divorced | Own | Skilled | No | Yes | 49 | 2 | 25 | Bad |
+| Low | Current | Car New | Low | Medium | M | Single | Own | Skilled | Yes | Yes | 13 | 2 | 31 | Good |
+| No Acct | Current | Repairs | No Acct | Long | M | Single | Own | Skilled | No | Yes | 28 | 4 | 47 | Good |
+| Low | Bank Paid | Education | High | Very Short | F | Divorced | Rent | Skilled | Yes | Yes | 7 | 2 | 23 | Bad |
+
+</div>
 
 Before feeding the data into machine learning models, it is essential to clean and preprocess the data. The preprocessing steps included handling missing values, one-hot encoding of categorical variables, and standardization of numerical columns.
 Handling missing values: The dataset was initially inspected for missing values, after which these were appropriately addressed. In this case, rows with missing 'Gender' information were dropped since there is only one missing row.
